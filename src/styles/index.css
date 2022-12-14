@@ -9,5 +9,8 @@ body {
 }
 
 header {
-  background-image: url("bg-desktop-dark.jpg");
+  height: 300px;
+  width: auto;
+  background-image: url("images/bg-desktop-dark.jpg");
+  background-size: cover;
 }
