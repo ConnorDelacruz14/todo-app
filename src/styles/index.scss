@@ -8,11 +8,13 @@ $Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
 $Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
 
 //Light theme
+
 $Very-Light-Gray: hsl(0, 0%, 98%);
 $Very-Light-Grayish-Blue: hsl(236, 33%, 92%);
 $Light-Grayish-Blue: hsl(233, 11%, 84%);
 $Dark-Grayish-Blue: hsl(236, 9%, 61%);
 $Very-Dark-Grayish-Blue: hsl(235, 19%, 35%);
+
 
 body {
   margin: 0;
@@ -60,7 +62,7 @@ header {
   font-family: inherit;
   font-weight: 200;
   font-size: 1.2rem;
-  padding: 20px;
+  padding: 15px 20px 15px 20px;
   width: 540px;
   box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.75);
   margin: 20px 0px 20px 0px;
@@ -77,6 +79,7 @@ header {
     border-radius: 1.2rem;
     margin-right: 20px;
     margin-left: 10px;
+    padding-top: 15px
   }
 
   input {
@@ -87,6 +90,8 @@ header {
     font-size: 1.2rem;
     color: inherit;
     width: 500px;
+    padding-top: 10px;
+    min-height: 25px;
   }
 
   input:focus {
@@ -105,13 +110,15 @@ header {
   background-color: $Very-Dark-Desaturated-Blue;
   font-weight: 200;
   font-size: 1.2rem;
-  padding: 20px;
-  border-color: #808080;
+  padding: 15px 20px 15px 20px;
+  border-bottom: 0.1px solid $Dark-Grayish-Blue;
   width: 540px;
-  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.75);
+  margin-bottom: 0.5px;
 
   .task-desc {
     width: 500px;
+    padding-top: 15px;
+    min-height: 25px;
   }
 
   .task-desc:hover {
@@ -125,6 +132,7 @@ header {
     border-radius: 1.2rem;
     margin-right: 20px;
     margin-left: 10px;
+    padding-top: 15px;
   }
 }
 
@@ -134,11 +142,11 @@ header {
   justify-content: space-between;
   color: $Very-Dark-Grayish-Blue;
   background-color: $Very-Dark-Desaturated-Blue;
-  font-weight: 200;
-  font-size: 16px;
   padding: 20px;
-  border-color: #808080;
   width: 540px;
+  box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.75);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 
   .remaining-items {
     background-color: inherit;

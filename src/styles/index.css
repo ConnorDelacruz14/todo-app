@@ -42,7 +42,7 @@ header {
   font-family: inherit;
   font-weight: 200;
   font-size: 1.2rem;
-  padding: 20px;
+  padding: 15px 20px 15px 20px;
   width: 540px;
   box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.75);
   margin: 20px 0px 20px 0px;
@@ -58,6 +58,7 @@ header {
   border-radius: 1.2rem;
   margin-right: 20px;
   margin-left: 10px;
+  padding-top: 15px;
 }
 .new-todo input {
   background-color: inherit;
@@ -67,6 +68,8 @@ header {
   font-size: 1.2rem;
   color: inherit;
   width: 500px;
+  padding-top: 10px;
+  min-height: 25px;
 }
 .new-todo input:focus {
   outline-width: 0;
@@ -83,13 +86,15 @@ header {
   background-color: hsl(235deg, 24%, 19%);
   font-weight: 200;
   font-size: 1.2rem;
-  padding: 20px;
-  border-color: #808080;
+  padding: 15px 20px 15px 20px;
+  border-bottom: 0.1px solid hsl(236deg, 9%, 61%);
   width: 540px;
-  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.75);
+  margin-bottom: 0.5px;
 }
 .task-item .task-desc {
   width: 500px;
+  padding-top: 15px;
+  min-height: 25px;
 }
 .task-item .task-desc:hover {
   cursor: pointer;
@@ -101,6 +106,7 @@ header {
   border-radius: 1.2rem;
   margin-right: 20px;
   margin-left: 10px;
+  padding-top: 15px;
 }
 
 .option-bar {
@@ -109,11 +115,11 @@ header {
   justify-content: space-between;
   color: hsl(235deg, 19%, 35%);
   background-color: hsl(235deg, 24%, 19%);
-  font-weight: 200;
-  font-size: 16px;
   padding: 20px;
-  border-color: #808080;
   width: 540px;
+  box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.75);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .option-bar .remaining-items {
   background-color: inherit;
