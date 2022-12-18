@@ -23,11 +23,11 @@ body {
   -webkit-font-smoothing: subpixel-antialiased;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: hsl(235, 21%, 11%);
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: $Very-Dark-Blue;
 
   svg:hover {
     cursor: pointer;
@@ -36,6 +36,7 @@ body {
   button:hover {
     cursor: pointer;
   }
+
 }
 
 header {
@@ -64,22 +65,33 @@ header {
   font-size: 1.2rem;
   padding: 15px 20px 15px 20px;
   width: 540px;
-  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.30);
   margin: 20px 0px 20px 0px;
+  border-radius: 5px;
 
   form {
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
 
-  svg {
-    width: 1.2rem;
-    height: 1.2rem;
-    border: 2px transparent;
-    border-radius: 1.2rem;
+  .svg-container {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: $Very-Dark-Grayish-Blue 2px solid;
+    border-radius: 1.5rem;
     margin-right: 20px;
     margin-left: 10px;
-    padding-top: 15px
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-image: none; //linear-gradient(to bottom right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  }
+
+  .check-mark {
+    padding-left: 5px;
+    padding-bottom: 2px;
+    display: none;
   }
 
   input {
@@ -107,6 +119,7 @@ header {
 
 .task-item {
   display: flex;
+  align-items: center;
   background-color: $Very-Dark-Desaturated-Blue;
   font-weight: 200;
   font-size: 1.2rem;
@@ -114,6 +127,7 @@ header {
   border-bottom: 0.1px solid $Dark-Grayish-Blue;
   width: 540px;
   margin-bottom: 0.5px;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.30);
 
   .task-desc {
     width: 500px;
@@ -125,14 +139,24 @@ header {
     cursor: pointer;
   }
 
-  svg {
-    width: 1.2rem;
-    height: 1.2rem;
-    border: 2px transparent;
-    border-radius: 1.2rem;
+  .svg-container {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: $Very-Dark-Grayish-Blue 2px solid;
+    border-radius: 1.5rem;
     margin-right: 20px;
     margin-left: 10px;
-    padding-top: 15px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+    background-image: none; //linear-gradient(to bottom right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  }
+
+  .check-mark {
+    padding-left: 5px;
+    padding-bottom: 2px;
+    display: none;
   }
 }
 
@@ -144,7 +168,7 @@ header {
   background-color: $Very-Dark-Desaturated-Blue;
   padding: 20px;
   width: 540px;
-  box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.30);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 

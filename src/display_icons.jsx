@@ -2,7 +2,12 @@ import React from "react";
 
 function DisplayIcon(props) {
   const icon_moon = (
-    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+    <svg
+      className="check-mark"
+      xmlns="http://www.w3.org/2000/svg"
+      width="26"
+      height="26"
+    >
       <path
         fill="#FFF"
         fillRule="evenodd"

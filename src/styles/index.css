@@ -5,11 +5,11 @@ body {
   -webkit-font-smoothing: subpixel-antialiased;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: hsl(235deg, 21%, 11%);
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: hsl(235deg, 21%, 11%);
 }
 body svg:hover {
   cursor: pointer;
@@ -44,21 +44,31 @@ header {
   font-size: 1.2rem;
   padding: 15px 20px 15px 20px;
   width: 540px;
-  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.3);
   margin: 20px 0px 20px 0px;
+  border-radius: 5px;
 }
 .new-todo form {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
-.new-todo svg {
-  width: 1.2rem;
-  height: 1.2rem;
-  border: 2px transparent;
-  border-radius: 1.2rem;
+.new-todo .svg-container {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: hsl(235deg, 19%, 35%) 2px solid;
+  border-radius: 1.5rem;
   margin-right: 20px;
   margin-left: 10px;
-  padding-top: 15px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-image: none;
+}
+.new-todo .check-mark {
+  padding-left: 5px;
+  padding-bottom: 2px;
+  display: none;
 }
 .new-todo input {
   background-color: inherit;
@@ -83,6 +93,7 @@ header {
 
 .task-item {
   display: flex;
+  align-items: center;
   background-color: hsl(235deg, 24%, 19%);
   font-weight: 200;
   font-size: 1.2rem;
@@ -90,6 +101,7 @@ header {
   border-bottom: 0.1px solid hsl(236deg, 9%, 61%);
   width: 540px;
   margin-bottom: 0.5px;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
 }
 .task-item .task-desc {
   width: 500px;
@@ -99,14 +111,23 @@ header {
 .task-item .task-desc:hover {
   cursor: pointer;
 }
-.task-item svg {
-  width: 1.2rem;
-  height: 1.2rem;
-  border: 2px transparent;
-  border-radius: 1.2rem;
+.task-item .svg-container {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: hsl(235deg, 19%, 35%) 2px solid;
+  border-radius: 1.5rem;
   margin-right: 20px;
   margin-left: 10px;
-  padding-top: 15px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: white;
+  background-image: none;
+}
+.task-item .check-mark {
+  padding-left: 5px;
+  padding-bottom: 2px;
+  display: none;
 }
 
 .option-bar {
@@ -117,7 +138,7 @@ header {
   background-color: hsl(235deg, 24%, 19%);
   padding: 20px;
   width: 540px;
-  box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
