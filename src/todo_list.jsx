@@ -26,6 +26,7 @@ class TodoList extends React.Component {
       dark_mode: true,
       display_mode: "dark",
       colors: dark_mode_colors,
+      mode: "All",
     };
     this.handleDisplayModeClick = this.handleDisplayModeClick.bind(this);
   }
@@ -62,6 +63,22 @@ class TodoList extends React.Component {
         dark_mode: !prevState.dark_mode,
         display_mode: prevState.dark_mode ? "light" : "dark",
         colors: prevState.dark_mode ? light_mode_colors : dark_mode_colors,
+      };
+    });
+  }
+
+  renderActiveTasks() {
+    this.setState((prevState) => {
+      return {
+        mode: "Active",
+      };
+    });
+  }
+
+  renderCompletedTasks() {
+    this.setState((prevState) => {
+      return {
+        mode: "Completed",
       };
     });
   }
@@ -142,10 +159,36 @@ class TodoList extends React.Component {
         <div className="task-list">
           {this.state.tasks}
           <div className="option-bar" id="option-bar">
-            <div className="remaining-items">5 items left</div>
-            <button className="all">All</button>
-            <button className="active">Active</button>
-            <button className="completed">Completed</button>
+            <div className="remaining-items">
+              {this.state.num_tasks} items left
+            </div>
+            <button
+              className="all"
+              onClick={(event) => {
+                event.style.color = "hsl(220, 98%, 61%)";
+                this.renderAllTasks();
+              }}
+            >
+              All
+            </button>
+            <button
+              className="active"
+              onClick={(event) => {
+                event.style.color = "hsl(220, 98%, 61%)";
+                this.renderActiveTasks();
+              }}
+            >
+              Active
+            </button>
+            <button
+              className="completed"
+              onClick={(event) => {
+                event.style.color = "hsl(220, 98%, 61%)";
+                this.renderCompletedTasks();
+              }}
+            >
+              Completed
+            </button>
             <button className="clear-completed">Clear Completed</button>
           </div>
         </div>

@@ -88,6 +88,10 @@ header {
     background-image: none; //linear-gradient(to bottom right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
   }
 
+  .svg-container:hover {
+    cursor: pointer;
+  }
+
   .check-mark {
     padding-left: 5px;
     padding-bottom: 2px;
@@ -153,6 +157,10 @@ header {
     background-image: none; //linear-gradient(to bottom right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
   }
 
+  .svg-container:hover {
+    cursor: pointer;
+  }
+
   .check-mark {
     padding-left: 5px;
     padding-bottom: 2px;
@@ -184,6 +192,10 @@ header {
     font-family: inherit;
     border: none;
     color: inherit;
+  }
+
+  .all {
+    color: hsl(220, 98%, 61%);
   }
 
   button:hover {
